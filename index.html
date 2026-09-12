@@ -10,7 +10,8 @@
 <body>
     <header class="header">
         <div class="container">
-            <h1 class="logo">🎮 Família Games 🎮</h1>
+            <!-- ID adicionado para o Easter Egg -->
+            <h1 id="main-logo" class="logo" title="Clique para ativar o Modo Arcade!">🎮 Família Games 🎮</h1>
             <p class="tagline">Seu portal nerd: Jogos, Livros & Filmes</p>
         </div>
     </header>
@@ -32,7 +33,7 @@
             <div class="container">
                 <h2 class="section-title">🎮 Referências de Jogos</h2>
                 <div class="cards-grid">
-                    <div class="card">
+                    <div class="card hidden-element">
                         <div class="card-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
                             <h3>Jogos Indie</h3>
                         </div>
@@ -47,7 +48,7 @@
                             <a href="#" class="btn">Ver Mais →</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card hidden-element">
                         <div class="card-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
                             <h3>RPGs Épicos</h3>
                         </div>
@@ -62,7 +63,7 @@
                             <a href="#" class="btn">Ver Mais →</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card hidden-element">
                         <div class="card-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
                             <h3>Multiplayer Online</h3>
                         </div>
@@ -77,7 +78,7 @@
                             <a href="#" class="btn">Ver Mais →</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card hidden-element">
                         <div class="card-header" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
                             <h3>Retro Gaming</h3>
                         </div>
@@ -101,7 +102,7 @@
             <div class="container">
                 <h2 class="section-title">📚 Tendências em Livros de Programação</h2>
                 <div class="books-grid">
-                    <div class="book-card">
+                    <div class="book-card hidden-element">
                         <div class="book-cover" style="background: #2d3748;"><span class="book-icon">💻</span></div>
                         <div class="book-info">
                             <h3>Clean Code</h3>
@@ -110,7 +111,7 @@
                             <div class="rating">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
-                    <div class="book-card">
+                    <div class="book-card hidden-element">
                         <div class="book-cover" style="background: #4a5568;"><span class="book-icon">🐍</span></div>
                         <div class="book-info">
                             <h3>Python Fluente</h3>
@@ -119,7 +120,7 @@
                             <div class="rating">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
-                    <div class="book-card">
+                    <div class="book-card hidden-element">
                         <div class="book-cover" style="background: #718096;"><span class="book-icon">⚡</span></div>
                         <div class="book-info">
                             <h3>JavaScript: The Good Parts</h3>
@@ -128,30 +129,12 @@
                             <div class="rating">⭐⭐⭐⭐</div>
                         </div>
                     </div>
-                    <div class="book-card">
+                    <div class="book-card hidden-element">
                         <div class="book-cover" style="background: #a0aec0;"><span class="book-icon">🏗️</span></div>
                         <div class="book-info">
                             <h3>Design Patterns</h3>
                             <p class="author">Gang of Four</p>
                             <p class="description">Padrões de design essenciais para desenvolvimento de software.</p>
-                            <div class="rating">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <div class="book-card">
-                        <div class="book-cover" style="background: #cbd5e0;"><span class="book-icon">🚀</span></div>
-                        <div class="book-info">
-                            <h3>The Pragmatic Programmer</h3>
-                            <p class="author">Andrew Hunt & David Thomas</p>
-                            <p class="description">Dicas práticas para ser um programador mais eficiente.</p>
-                            <div class="rating">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <div class="book-card">
-                        <div class="book-cover" style="background: #e2e8f0;"><span class="book-icon">🤖</span></div>
-                        <div class="book-info">
-                            <h3>Hands-On Machine Learning</h3>
-                            <p class="author">Aurélien Géron</p>
-                            <p class="description">Aprenda machine learning com Scikit-Learn e TensorFlow.</p>
                             <div class="rating">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
@@ -164,7 +147,7 @@
             <div class="container">
                 <h2 class="section-title">🎬 Filmes Geek & Sci-Fi</h2>
                 <div class="movies-grid">
-                    <div class="movie-card">
+                    <div class="movie-card hidden-element">
                         <div class="movie-poster" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);"><span class="movie-icon">🦸</span></div>
                         <div class="movie-info">
                             <h3>Homem-Aranha: Através do Aranhaverso</h3>
@@ -174,7 +157,7 @@
                             <div class="rating">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
-                    <div class="movie-card">
+                    <div class="movie-card hidden-element">
                         <div class="movie-poster" style="background: linear-gradient(135deg, #4ecdc4 0%, #556270 100%);"><span class="movie-icon">🚀</span></div>
                         <div class="movie-info">
                             <h3>Duna: Parte Dois</h3>
@@ -184,7 +167,7 @@
                             <div class="rating">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
-                    <div class="movie-card">
+                    <div class="movie-card hidden-element">
                         <div class="movie-poster" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><span class="movie-icon">🎮</span></div>
                         <div class="movie-info">
                             <h3>Free Guy: Assumindo o Controle</h3>
@@ -192,36 +175,6 @@
                             <p class="year">2021</p>
                             <p class="synopsis">Um NPC de videogame descobre que é personagem de um jogo e decide virar herói.</p>
                             <div class="rating">⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <div class="movie-card">
-                        <div class="movie-poster" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><span class="movie-icon">🤖</span></div>
-                        <div class="movie-info">
-                            <h3>O Exterminador do Futuro</h3>
-                            <p class="genre">Sci-Fi / Ação</p>
-                            <p class="year">1984</p>
-                            <p class="synopsis">Clássico sobre IA e viagem no tempo que marcou gerações de nerds.</p>
-                            <div class="rating">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <div class="movie-card">
-                        <div class="movie-poster" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"><span class="movie-icon">👾</span></div>
-                        <div class="movie-info">
-                            <h3>Tron: O Legado</h3>
-                            <p class="genre">Sci-Fi / Aventura</p>
-                            <p class="year">2010</p>
-                            <p class="synopsis">Filho entra no mundo digital criado por seu pai desaparecido.</p>
-                            <div class="rating">⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <div class="movie-card">
-                        <div class="movie-poster" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"><span class="movie-icon">🌌</span></div>
-                        <div class="movie-info">
-                            <h3>Interestelar</h3>
-                            <p class="genre">Sci-Fi / Drama</p>
-                            <p class="year">2014</p>
-                            <p class="synopsis">Exploração espacial e buracos negros em uma aventura emocionante.</p>
-                            <div class="rating">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
                 </div>
@@ -232,7 +185,7 @@
         <section id="sobre" class="section section-dark">
             <div class="container">
                 <h2 class="section-title">ℹ️ Sobre a Família Games</h2>
-                <div class="about-content">
+                <div class="about-content hidden-element">
                     <p>Bem-vindo ao <strong>Família Games</strong>, seu portal definitivo para tudo que é nerd!</p>
                     <p>Aqui reunimos as melhores referências sobre jogos, as tendências mais quentes em livros de programação e os filmes que todo geek precisa assistir.</p>
                     <div class="features">
@@ -268,5 +221,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- Botão Flutuante de Dados -->
+    <button id="dice-btn" title="Rolar Dados (D20)">🎲</button>
+    <div id="dice-result"></div>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
 </body>
 </html>
