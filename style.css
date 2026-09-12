@@ -270,3 +270,48 @@ html { scroll-behavior: smooth; }
     from { transform: translateY(0); }
     to { transform: translateY(-5px); }
 }
+
+/* --- Estilos para Links de Filmes --- */
+
+.movie-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Overlay do Botão Play */
+.play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Deixa o clique passar para o link */
+}
+
+/* Efeito Hover no Card de Filme */
+.movie-link:hover .movie-card {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #ff4da6; /* Borda rosa neon */
+    box-shadow: 0 15px 40px rgba(255, 77, 166, 0.3);
+}
+
+/* Mostrar o Overlay ao passar o mouse */
+.movie-link:hover .play-overlay {
+    opacity: 1;
+}
+
+/* Animação leve no ícone do filme */
+.movie-link:hover .movie-icon {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
