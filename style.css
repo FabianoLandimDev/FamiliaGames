@@ -244,3 +244,29 @@ body.arcade-mode .btn:hover {
 
 html { scroll-behavior: smooth; }
 ::selection { background: #667eea; color: white; }
+
+/* Adicione isso ao final do seu style.css */
+
+/* Garante que o link não tenha sublinhado e ocupe tudo */
+.book-link {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Faz o link ocupar o espaço do card */
+}
+
+/* Efeito extra ao passar o mouse nos livros */
+.book-link:hover .book-card {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #00ff88; /* Borda verde neon ao passar o mouse */
+    box-shadow: 0 15px 40px rgba(0, 255, 136, 0.2);
+}
+
+/* Animação do ícone de link */
+.book-link:hover .book-icon {
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-5px); }
+}
